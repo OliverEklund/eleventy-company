@@ -8,6 +8,9 @@
 </head>
 <body>
     {% include "nav.njk" %}
+    {% block content %}
+    <main>{{ content | safe }}</main>
+    {% endblock %}
     {% include "footer.html" %}
 
 </body>

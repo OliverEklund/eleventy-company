@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% include "header.njk" %}
+{% include "info.njk" %}
+
+{{ content | safe }}
+
+{% endblock %}
